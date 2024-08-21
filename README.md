@@ -8,7 +8,7 @@ A simple website developed to provide information about a festival, including th
 ## 🛠 Tools
 
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,gulp,git)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,gulp,glob,git)](https://skillicons.dev)
 ## 💻 Installation
 
 Clone the repository.
