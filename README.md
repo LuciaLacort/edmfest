@@ -4,7 +4,7 @@
 
 Static website developed to provide information about a festival, including the performers attending, ticket prices and a photo gallery.
 
-The interesting part is how the images are processed to be as small as possible keeping the quality and how the scroll has been manages all over the website.
+Beyond the design, it's interesting how the images are processed to be as small as possible keeping the quality and how the scroll has been managed all over the website.
 
 
 ## 🛠 Tools
