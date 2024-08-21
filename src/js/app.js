@@ -17,20 +17,19 @@ function fixNavigation(){
             
         }
     })
-
 }
 
-//Gallery
 
 function createGallery(){
     const totalImages = 16;
     const gallery = document.querySelector('.gallery__images');
     for(let i = 1; i <= totalImages; i++){
-        const image = document.createElement('IMG')
-        image.src = `src/img/gallery/full/${i}.jpg`
-        image.alt = 'Imagen de la galeria'
-
-   
+        const image = document.createElement('PICTURE')
+        image.innerHTML = `
+        <source srcset="build/img/gallery/thumb/${i}.avif" type="image/avif">
+        <source srcset="build/img/gallery/thumb/${i}.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="build/img/gallery/thumb/${i}.jpg" alt="imagen galeria">`;
+       
         image.onclick = function(){
             showImage(i) 
         }
@@ -41,9 +40,12 @@ function createGallery(){
 
 function showImage(i){
 
-    const image = document.createElement('IMG')
-    image.src = `src/img/gallery/full/${i}.jpg`
-    image.alt = 'Imagen de la galeria'
+    const image = document.createElement('PICTURE')
+    image.innerHTML = `
+        <source srcset="build/img/gallery/full/${i}.avif" type="image/avif">
+        <source srcset="build/img/gallery/full/${i}.webp" type="image/webp">
+        <img loading="lazy" width="200" height="300" src="build/img/gallery/full/${i}.jpg" alt="imagen galeria">`;
+    
 
     const modal = document.createElement('DIV')
     modal.classList.add('modal')
