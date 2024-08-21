@@ -1,0 +1,56 @@
+@use 'base/variables' as v; 
+@use 'base/mixins' as m;
+
+.lineup{
+    background-color: v.$fstColor;
+    h3, .day{
+        text-align: center;
+        color: v.$white;
+    }
+    .day{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+.stage__container{
+    @include m.container;
+    @include m.tablet{
+         @include m.grid(2);
+    }
+}
+
+.stage{
+    padding-top:2rem;
+    .stage__name{
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center
+    }
+}
+
+.stage__calendar{
+    @include m.list__reset;
+    li{
+        padding: 2.5rem;
+        font-weight: 700;
+        span{
+            font-weight: 400;
+        }
+    }
+}
+
+.yellow__bg{
+    background-color: v.$scndColor;
+    li:nth-child(odd){
+        background-color: lighten(v.$scndColor, 5%);
+    }
+}
+
+.green__bg{
+    background-color: v.$headerBg;
+    li:nth-child(odd){
+        background-color: lighten(v.$headerBg, 5%);
+    }
+}
