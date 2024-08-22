@@ -31,8 +31,11 @@
     z-index: 10;
     h2{
         color: v.$white;
-        font-size: 7rem;
+        font-size: 5rem;
         margin: 0;
+        @include m.tablet{
+            font-size: 7rem;
+        }
     }
     p{
         background-color: v.$fstColor;

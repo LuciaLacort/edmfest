@@ -44,16 +44,16 @@
     }
 }
 
-.yellow__bg{
+.lineup__bg{
     background-color: v.$scndColor;
     li:nth-child(odd){
         background-color: lighten(v.$scndColor, 5%);
     }
 }
 
-.green__bg{
-    background-color: v.$scndColor;
-    li:nth-child(odd){
-        background-color: lighten(v.$scndColor, 5%);
-    }
-}
+// .green__bg{
+//     background-color: v.$scndColor;
+//     li:nth-child(odd){
+//         background-color: lighten(v.$scndColor, 5%);
+//     }
+// }
