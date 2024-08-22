@@ -15,7 +15,12 @@
         margin-bottom: 2rem ;
     }
     .festival__date{
-        color: v.$headerBg;
+        color: v.$fstColor;
+    }
+    .festival__msg{
+        font-family: v.$scndFont;
     }
   
 }
+
+

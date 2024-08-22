@@ -26,11 +26,14 @@
         font-size: 3rem;
         font-weight: 900;
         text-transform: uppercase;
-        text-align: center
+        text-align: center;
+        color: v.$white;
     }
 }
 
 .stage__calendar{
+    color: v.$white;
+    font-family: v.$scndFont;
     @include m.list__reset;
     li{
         padding: 2.5rem;
@@ -49,8 +52,8 @@
 }
 
 .green__bg{
-    background-color: v.$headerBg;
+    background-color: v.$scndColor;
     li:nth-child(odd){
-        background-color: lighten(v.$headerBg, 5%);
+        background-color: lighten(v.$scndColor, 5%);
     }
 }
